@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seal Chatroom</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="chatroom-page">
+      <!-- 🐚 Logo in Top Left -->
+      <img src="img/seal-star-logo.png" alt="Seal Star Logo" class="seal-logo">
+
+      <!-- 🧭 Navigation Bar (centered top) -->
+      <nav class="navbar">
+          <a href="home.html" class="nav-btn">
+              <img src="img/home.png" alt="Home Icon">
+          </a>
+          <a href="chat.html" class="nav-btn">
+              <img src="img/chat.png" alt="Chat Icon">
+          </a>
+          <a href="game.html" class="nav-btn">
+              <img src="img/game.png" alt="Game Icon">
+          </a>
+      </nav>
+  
+      <!-- 🚪 Exit Button (top right) -->
+      <a href="index.html" class="exit-btn">
+          <img src="img/exit.png" alt="Exit Icon">
+      </a>
+  <!-- Iceberg background (homepage-style) -->
+  <div class="chatroom-container">
+
+    <!-- Chatroom background PNG overlay -->
+    <img src="img/chatroom.png" alt="Chatroom UI Frame" class="chatroom-frame"/>
+
+
+    <!-- Message Bubbles (4 messages) -->
+    <img src="img/msg1.png" alt="Message 1" class="chat-message msg1"/>
+    <img src="img/msg2.png" alt="Message 2" class="chat-message msg2"/>
+    <img src="img/msg3.png" alt="Message 3" class="chat-message msg3"/>
+    <img src="img/msg4.png" alt="Message 4" class="chat-message msg4"/>
+
+    <!-- Fake Reply Options -->
+    <div class="chat-options">
+        <button id="hi-btn">Hi! 👋</button>
+        <button id="coins-btn">Can I have coins?</button>
+        <button id="vip-btn">How do I become VIP??</button>
+    </div>
+  </div>
+
+  <div id="broke-popup" class="popup hidden">
+    <img src="img/broke-ban.png" alt="Broke Ban Message" />
+  </div>
+
+  <div id="vip-popup" class="popup hidden">
+    <img src="img/vip-popup.png" alt="VIP Popup" />
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

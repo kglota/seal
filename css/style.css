@@ -1,0 +1,446 @@
+/* landing page */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/seal-background.png') no-repeat center center/cover;
+}
+
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.logo {
+    width: 80vw; 
+    max-width: 900px; 
+    animation: float 3s infinite ease-in-out;
+
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(0px); }
+}
+
+
+.play-button {
+    width: 350px; 
+    max-width: 90%;
+    margin-top: -20px; 
+    transition: 0.3s;
+}
+
+.play-button:hover {
+    transform: scale(1.1);
+}
+
+/* dress up page */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../img/dressup-background.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Dress-up Container */
+.dressup-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Customization Box (Purple Background) */
+.customization-box {
+    background: rgba(72, 0, 130, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+}
+
+/* Seal Avatar */
+.seal-avatar {
+    width: 50%;
+    max-width: 400px;
+}
+
+/* outfit selection */
+
+.outfit-selection {
+    display: flex;
+    justify-content: center; /* Centers items */
+    gap: 15px; /* Space between outfit options */
+    margin-top: 15px; /* Adjust spacing from the title */
+}
+
+/* Outfit Images */
+.outfit-option {
+    width: 60px; /* Adjust size (try 60px, 70px, etc.) */
+    height: auto; /* Keeps proportions */
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.outfit-option:hover {
+    transform: scale(1.1);
+}
+
+.vip-lock {
+    font-size: 1rem;
+    color: #ffcc00;
+    margin-top: 10px;
+}
+
+.continue-btn {
+    display: inline-block;
+    background: crimson;
+    padding: 12px 20px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.continue-btn:hover {
+    background: darkred;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../img/signup-background.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* sign in page */
+
+.signup-container {
+    background: rgba(72, 0, 130, 0.85); 
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    color: white;
+    margin-right: 30px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 1.8rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+.input-note {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #dddddd;
+    margin: 3px 0 10px;
+}
+
+.birthday-select {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+select {
+    width: 48%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+.agreement-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.agreement-box strong {
+    font-size: 1rem;
+}
+
+.terms-text {
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.signup-btn {
+    display: inline-block;
+    background: darkred;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.signup-btn:hover {
+    background: rgb(150, 0, 0);
+    transform: scale(1.05);
+}
+
+/* home page */
+/* 🌊 HOME PAGE SPECIFIC STYLES */
+
+/* Background for home page */
+.home-page {
+    background: url('../img/seal-background.png') no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+/* Seal Star logo (top-left) */
+.seal-logo {
+    position: fixed;
+    top: 10px; /* raised from 15px */
+    left: 20px;
+    width: 160px; /* slightly bigger if you want more impact */
+    z-index: 10;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.seal-logo:hover {
+    filter: drop-shadow(0 0 12px #ffb6f9); /* pink glow */
+    transform: scale(1.05);
+}
+
+/* Nav bar (center top) */
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 35px;
+    background: none;
+    z-index: 10;
+    align-items: center; /* 🔧 fixes vertical misalignment */
+}
+
+/* Each nav button (icon only) */
+.nav-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.nav-btn img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    vertical-align: middle;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-btn img:hover {
+    transform: scale(1.1);
+}
+
+/* Exit Button (top right) */
+.exit-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.exit-btn img {
+    width: 45px;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.exit-btn img:hover {
+    transform: scale(1.1);
+}
+
+/* Centered Seal Avatar */
+.seal-container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.seal-avatar {
+    width: 370px;
+    height: auto;
+}
+
+/* 🔹 Chat Page Base *//* 🌊 General Chatroom Background */
+body.chatroom-page {
+    margin: 0;
+    padding: 0;
+    background: url('../img/seal-background.png') no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  /* 📦 Container to hold everything */
+  .chatroom-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* 🖼 Chatroom frame overlay */
+  .chatroom-frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vw;
+    max-width: 1000px;
+    z-index: 1;
+  }
+  
+ 
+  
+  /* 📨 Message Bubbles (as PNGs) */
+  .chat-message {
+    position: absolute;
+    width: 280px;
+    z-index: 3;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  /* ⏱️ Animate them one by one */
+  .msg1 {
+    top: 150px;
+    left: 735px;
+    animation-delay: 0.5s;
+  }
+  .msg2 {
+    top: 240px;
+    left: 735px;
+    animation-delay: 1.5s;
+  }
+  .msg3 {
+    top: 340px;
+    left: 735px;
+    animation-delay: 2.5s;
+  }
+  .msg4 {
+    top: 440px;
+    left: 735px;
+    animation-delay: 3.5s;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* 🧃 Reply Options (bottom of screen) */
+  .chat-options {
+    position: absolute;
+    bottom: 152px;
+    left: 63.4%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 5;
+  }
+  
+  .chat-options button {
+    background: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 18px;
+    font-size: 0.8rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .chat-options button:hover {
+    transform: scale(1.05);
+    background: #e8f5ff;
+  }
+
+  /* Popup container */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4); /* Optional dim background */
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  /* Hide by default */
+  .hidden {
+    display: none;
+  }
+  
+  /* Optional: Style the image to fit screen better */
+  .popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 20px;
+  }
