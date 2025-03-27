@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seal Star - Treasure Pop</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="game-page">
+    <!-- 🐚 Logo in Top Left -->
+    <img src="img/seal-star-logo.png" alt="Seal Star Logo" class="seal-logo">
+
+    <!-- 🧭 Navigation Bar (centered top) -->
+    <nav class="navbar">
+        <a href="home.html" class="nav-btn">
+            <img src="img/home.png" alt="Home Icon">
+        </a>
+        <a href="chat.html" class="nav-btn">
+            <img src="img/chat.png" alt="Chat Icon">
+        </a>
+        <a href="game.html" class="nav-btn">
+            <img src="img/game.png" alt="Game Icon">
+        </a>
+    </nav>
+
+    <!-- 🚪 Exit Button (top right) -->
+    <a href="index.html" class="exit-btn">
+        <img src="img/exit.png" alt="Exit Icon">
+    </a>
+
+  <!-- Title PNG -->
+  <img src="img/title-treasurepop.png" alt="Treasure Pop" class="game-title" />
+
+  <!-- Floating Bubbles -->
+  <div class="bubble-container">
+    <div class="bubble-wrapper" style="top: 12%; left: 18%;">
+      <img src="img/bubble-empty.png" class="bubble" data-popup="img/popup-shell1.png">
+    </div>
+    <div class="bubble-wrapper" style="top: 26%; left: 42%;">
+      <img src="img/bubble-empty.png" class="bubble" data-popup="img/popup-plastic2.png">
+    </div>
+    <div class="bubble-wrapper" style="top: 39%; left: 65%;">
+      <img src="img/bubble-empty.png" class="bubble" data-popup="img/popup-goldenclam3.png">
+    </div>
+    <div class="bubble-wrapper" style="top: 52%; left: 30%;">
+      <img src="img/bubble-empty.png" class="bubble" data-popup="img/popup-boots4.png">
+    </div>
+    <div class="bubble-wrapper" style="top: 66%; left: 73%;">
+      <img src="img/bubble-empty.png" class="bubble" data-popup="img/popup-starfish5.png">
+    </div>
+  </div>
+  
+
+<!-- Hidden Popup Image -->
+<div id="game-popup" class="hidden">
+    <img id="game-popup-img" src="">
+  </div>
+
+
+  <script src="game.js"></script>
+</body>
+</html>

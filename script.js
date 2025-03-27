@@ -1,35 +1,53 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const hiButton = document.getElementById('hi-btn');
-    const coinsButton = document.getElementById('coins-btn');
-    const vipButton = document.getElementById('vip-btn');
-    const messageSeals = document.querySelectorAll('.chat-message');
-    const brokePopup = document.getElementById('broke-popup');
-    const vipPopup = document.getElementById('vip-popup');
-  
-    // Hide the seals when "Hi!" is clicked
-    hiButton.addEventListener('click', function () {
-      messageSeals.forEach(seal => {
-        seal.style.display = 'none';
+  const hiButton = document.getElementById('hi-btn');
+  const coinsButton = document.getElementById('coins-btn');
+  const vipButton = document.getElementById('vip-btn');
+
+  const brokePopup = document.getElementById('broke-popup');
+  const vipPopup = document.getElementById('vip-popup');
+
+  // 🔹 Show popup helper
+  function showPopup(popupElement) {
+    if (popupElement) {
+      popupElement.classList.add('show');
+    }
+  }
+
+  // 🔹 Hide popup on click
+  function hidePopupOnClick(popupElement) {
+    if (popupElement) {
+      popupElement.addEventListener('click', () => {
+        popupElement.classList.remove('show');
       });
+    }
+  }
+
+  // 💬 "Can I have coins?" button
+  if (coinsButton) {
+    coinsButton.addEventListener('click', () => {
+      showPopup(brokePopup);
     });
-  
-    // Show the "broke" popup when "Can I have coins?" is clicked
-    coinsButton.addEventListener('click', function () {
-      brokePopup.classList.remove('hidden');
+  }
+
+  // 💬 "How do I become VIP??" button
+  if (vipButton) {
+    vipButton.addEventListener('click', () => {
+      showPopup(vipPopup);
     });
-  
-    // Show the "VIP" popup when "How do I become VIP??" is clicked
-    vipButton.addEventListener('click', function () {
-      vipPopup.classList.remove('hidden');
+  }
+
+  // ❌ Clicking popup closes it
+  hidePopupOnClick(brokePopup);
+  hidePopupOnClick(vipPopup);
+
+  // 👋 "Hi!" button hides the seals
+  if (hiButton) {
+    hiButton.addEventListener('click', () => {
+      const chatMessages = document.querySelectorAll('.chat-message');
+      chatMessages.forEach(msg => {
+        msg.classList.add('hidden');
+      });
+      console.log('Hi clicked — seals hidden');
     });
-  
-    // Close the popups when clicked
-    brokePopup.addEventListener('click', function () {
-      brokePopup.classList.add('hidden');
-    });
-  
-    vipPopup.addEventListener('click', function () {
-      vipPopup.classList.add('hidden');
-    });
-  });
-  
+  }
+});
