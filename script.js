@@ -6,14 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const brokePopup = document.getElementById('broke-popup');
   const vipPopup = document.getElementById('vip-popup');
 
-  // 🔹 Show popup helper
   function showPopup(popupElement) {
     if (popupElement) {
       popupElement.classList.add('show');
     }
   }
 
-  // 🔹 Hide popup on click
   function hidePopupOnClick(popupElement) {
     if (popupElement) {
       popupElement.addEventListener('click', () => {
@@ -22,25 +20,21 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // 💬 "Can I have coins?" button
   if (coinsButton) {
     coinsButton.addEventListener('click', () => {
       showPopup(brokePopup);
     });
   }
 
-  // 💬 "How do I become VIP??" button
   if (vipButton) {
     vipButton.addEventListener('click', () => {
       showPopup(vipPopup);
     });
   }
 
-  // ❌ Clicking popup closes it
   hidePopupOnClick(brokePopup);
   hidePopupOnClick(vipPopup);
 
-  // 👋 "Hi!" button hides the seals
   if (hiButton) {
     hiButton.addEventListener('click', () => {
       const chatMessages = document.querySelectorAll('.chat-message');

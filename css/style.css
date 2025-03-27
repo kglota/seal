@@ -1,6 +1,6 @@
-/* ===========================
-   🌊 GLOBAL STYLES + RESET
-=========================== */
+/* 
+   GLOBAL STYLES
+ */
 
 body, html {
     margin: 0;
@@ -9,9 +9,9 @@ body, html {
     font-family: Arial, sans-serif;
   }
   
-  /* ===========================
-     🎨 BACKGROUNDS BY PAGE
-  =========================== */
+  /* 
+   BACKGROUNDS 
+*/
   
   body.default-page {
     background: url('../img/seal-background.png') no-repeat center center/cover;
@@ -30,9 +30,9 @@ body, html {
     position: relative;
   }
   
-  /* ===========================
-     🧸 LANDING PAGE
-  =========================== */
+  /* 
+LANDING PAGE
+ */
   
   .landing-container {
     display: flex;
@@ -64,9 +64,9 @@ body, html {
     transform: scale(1.1);
   }
   
-  /* ===========================
-     💃 DRESSUP PAGE
-  =========================== */
+  /* 
+ DRESSUP PAGE
+ */
   
   .dressup-container {
     display: flex;
@@ -128,9 +128,8 @@ body, html {
     background: darkred;
   }
   
-  /* ===========================
-     📝 SIGNUP PAGE
-  =========================== */
+  /* SIGNUP PAGE
+ */
   
   .signup-container {
     background: rgba(72, 0, 130, 0.85);
@@ -213,9 +212,8 @@ body, html {
     transform: scale(1.05);
   }
   
-  /* ===========================
-     🏠 HOME PAGE
-  =========================== */
+  /*  HOME PAGE
+*/
   
   .seal-logo {
     position: fixed;
@@ -269,9 +267,7 @@ body, html {
     transform: scale(1.1);
   }
   
-  /* ===========================
-   💬 CHAT PAGE STYLES
-=========================== */
+  /* CHAT PAGE STYLES*/
 
 body.chatroom-page {
     background: url('../img/seal-background.png') no-repeat center center/cover;
@@ -282,14 +278,12 @@ body.chatroom-page {
     font-family: Arial, sans-serif;
   }
   
-  /* Container holding everything */
   .chatroom-container {
     position: relative;
     width: 100%;
     height: 100%;
   }
   
-  /* PNG overlay frame */
   .chatroom-frame {
     position: absolute;
     top: 50%;
@@ -300,7 +294,7 @@ body.chatroom-page {
     z-index: 1;
   }
   
-  /* Message bubbles (fade in one by one) */
+  /* Message bubbles */
   .chat-message {
     position: absolute;
     width: 280px;
@@ -318,7 +312,6 @@ body.chatroom-page {
     to { opacity: 1; }
   }
   
-  /* Fake reply buttons */
   .chat-options {
     position: absolute;
     bottom: 152px;
@@ -345,16 +338,12 @@ body.chatroom-page {
     background: #e8f5ff;
   }
   
-  /* ===========================
-     🪩 POPUP STYLING
-  =========================== */
+  /* POPUPS*/
   
-  /* Fully hide the popup until shown */
   .hidden {
     display: none;
   }
   
-  /* Fullscreen dim background + center */
   .popup {
     position: fixed;
     top: 0;
@@ -368,12 +357,10 @@ body.chatroom-page {
     z-index: 999;
   }
   
-  /* When .show is added via JS */
   .popup.show {
     display: flex;
   }
   
-  /* Image inside popup */
   .popup img {
     max-width: 90vw;
     max-height: 80vh;
@@ -382,9 +369,7 @@ body.chatroom-page {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
   }
   
-  /* ===========================
-     🎮 GAME PAGE: BUBBLES + POPUP
-  =========================== */
+  /* GAME PAGE*/
   
   .game-title {
     display: block;

@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   
-    // Close popup when clicking anywhere on it
     popup.addEventListener('click', () => {
       popup.classList.remove('show');
     });
